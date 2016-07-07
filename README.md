@@ -17,10 +17,10 @@ Note the measurements throughout these files are in millimeters because the rest
 
 If you don't have VCarve 8.0 and your table router can understand these CNC files, by all means go ahead and run them (on DRY RUN first!).  The G-code files follow this naming convention:
 
-* F[1-5]: Things you will mill out of the front of the controller face, sequentially from file F1 to F5
-* P[1-2]: More things you will mill out of the front of the controller face, sequentially from file P1 to P2
-* B[1-2]: Things you will mill out of the back of the controller face, sequentially from file B1 to B2
-* P[1-2]: Things you will mill out of the paint stencil, sequentially from file P1 to P2
+* F[1-4]: Things you will mill out of the front of the controller face, sequentially from file F1 to F4
+* B[1-2]: Things you will mill out of the back of the controller face, sequentially from file B1 to B3
+* G1: Mill this out of the front of the controller face after you mill the back... well theoretically it shouldn't really matter if you flip it back around :-P
+* S[1-2]: Things you will mill out of the paint stencil, sequentially from file S1 to S2
 
 The file names usually contain some sort of description indicating the tool involved, such as "End Mill", "Ball Nose", or "V Bit", and a 4-digit number indicating the size of the tool in mils, such that 0125 = 1/8 inch and 1000 = 1 inch.
 
